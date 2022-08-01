@@ -138,9 +138,6 @@ function commonLayout(){
             domHtml.classList.add("smooth");
             setTimeout(function(){
                 window.scrollTo(0,0);
-                // domHtml.addEventListener("transitionend",function(){
-                //     console.log(1);
-                // },false);
             },30);
         },false);
         window.addEventListener("scroll",function(){
@@ -148,7 +145,6 @@ function commonLayout(){
             if(scroll == 0){
                  domHtml.classList.remove("smooth");
             }
-            console.log(scroll);
         });
     }
     mbTotal();
@@ -351,3 +347,60 @@ DesignPopup.prototype.bindEvent = function () {
         }, false);
     }
 };
+
+
+// maxWid
+
+function maxWid(device,item){
+    var deviceCheck = device;
+    var itemObj = document.querySelectorAll(item);
+    var windowWidth = window.innerWidth;
+
+    action();
+    window.addEventListener("resize",function(){
+        if(windowWidth !== window.innerWidth){
+             action();    
+        }
+        windowWidth = window.innerWidth;
+    },false);
+
+
+    function action(){
+        var maxArray = [];
+        itemObj.forEach(function(elem){
+            elem.style.removeProperty("width");
+            maxArray.push(elem.offsetWidth);
+        });
+        itemObj.forEach(function(elem){
+            // if(deviceCheck == "mobile"){
+            //     if(window.innerWidth<1024){
+            //         elem.style.width = Math.max.apply(null,maxArray)+"px";
+            //     }else{
+            //         elem.style.removeProperty("width");
+            //     }
+            // }else if(deviceCheck == "pc"){
+            //     if(window.innerWidth>=1024){
+            //         elem.style.width = Math.max.apply(null,maxArray)+"px";
+            //     }else{
+            //         elem.style.removeProperty("width");
+            //     }
+            // }else{
+            //     elem.style.width = Math.max.apply(null,maxArray)+"px";
+            // }
+            if((deviceCheck == "mobile" && window.innerWidth<1024) || (deviceCheck == "pc" && window.innerWidth>=1024)){
+                elem.style.width = Math.max.apply(null,maxArray)+"px";
+            }else{
+                elem.style.removeProperty("width");
+            }
+        });
+    }
+}
+
+
+function currentItemFunc(){
+    var mc_current_item = document.querySelectorAll(".mc_current_item");
+    var mc_current_wrap = document.querySelector(".mc_current_wrap");
+    if(mc_current_item.length>6){
+        mc_current_wrap.classList.add("skin2");
+    }
+}
