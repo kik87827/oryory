@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans KR'),
+      url('./webfont/NotoSans-Regular.woff2') format("woff2"),
+      url('./webfont/NotoSans-Regular.ttf') format("truetype");
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Noto Sans KR'),
+      url('./webfont/NotoSans-Medium.woff2') format("woff2"),
+      url('./webfont/NotoSans-Medium.ttf') format("truetype");
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans KR'), 
+      url('./webfont/NotoSans-Bold.woff2') format("woff2"),
+      url('./webfont/NotoSans-Bold.ttf') format("truetype");
+}
+@import url('http://fonts.cdnfonts.com/css/open-sans');

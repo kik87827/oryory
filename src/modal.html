@@ -1,0 +1,20 @@
+@@include('./include/head.html')
+<body class="front_body">
+	<div class="page_wrap">
+		<a href="#" class="btn_guide">레이어팝업</a>
+	</div>
+	<script>
+		var designAlert = new DesignModal({
+			type: "confirm", // alert, confirm
+			message: "테스트",
+			identify_callback: function() {
+				console.log('확인');
+			},
+			cancel_callback: function() {
+				console.log('취소');
+			}
+		})
+		// 강제로 닫기 designAlert.removeHide();
+	</script>
+</body>
+</html>
