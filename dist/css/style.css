@@ -3879,6 +3879,7 @@ html.smooth {
 .mc_linkage_wrap .pixed_container {
   max-width: 76.25rem;
   padding: 0 1.875rem;
+  position: relative;
 }
 
 .mc_linkage_title_row {
@@ -3958,6 +3959,32 @@ html.smooth {
   white-space: nowrap;
   margin-left: 0.625rem;
   font-size: 0.875rem;
+}
+
+.btn_mc_more {
+  display: block;
+  width: 1.875rem;
+  height: 1.875rem;
+  position: absolute;
+  top: 0.3125rem;
+  right: 1.875rem;
+}
+
+.btn_mc_more:before,
+.btn_mc_more:after {
+  display: block;
+  content: "";
+  width: 0.625rem;
+  height: 0.125rem;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -0.125rem 0 0 -0.3125rem;
+}
+
+.btn_mc_more:after {
+  transform: translateZ(0) rotate(90deg);
 }
 
 .mc_menuobj_wrap {
@@ -4207,12 +4234,12 @@ html.smooth {
     margin-bottom: 0.625rem;
   }
   .mc_linkage_title:before {
-    width: 1.25rem;
-    height: 20;
-    flex-basis: 1.25rem;
+    width: 1.875rem;
+    height: 30;
+    flex-basis: 1.875rem;
   }
   .mc_linkage_title_text {
-    font-size: 0.9375rem;
+    font-size: 1.125rem;
     margin-left: 0.3125rem;
   }
   .mc_linkage_data_list {
@@ -4242,6 +4269,10 @@ html.smooth {
   }
   .nodata_para {
     font-size: 0.875rem;
+  }
+  .btn_mc_more {
+    top: 0;
+    right: 1.25rem;
   }
   .mc_menuobj_wrap {
     padding: 0.625rem 0.625rem;
