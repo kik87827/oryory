@@ -387,7 +387,7 @@ function maxWid(device,item){
             // }else{
             //     elem.style.width = Math.max.apply(null,maxArray)+"px";
             // }
-            if((deviceCheck == "mobile" && window.innerWidth<1024) || (deviceCheck == "pc" && window.innerWidth>=1024)){
+            if((deviceCheck == "mobile" && window.innerWidth<1024) || (deviceCheck == "pc" && window.innerWidth>=1024) || (deviceCheck == "")){
                 elem.style.width = Math.max.apply(null,maxArray)+"px";
             }else{
                 elem.style.removeProperty("width");

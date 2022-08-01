@@ -110,11 +110,124 @@
 						</div>
 					</div>
 					<div class="subcontent">
-						내용이 들어갑니다.<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+						<div class="vertical_item_group">
+							<div class="vertical_item keyform_item">
+								<div class="key_cols">
+									<div class="form_category_group">
+										<p class="form_category">받는사람 정보</p>
+										<div class="ico_category"></div>
+									</div>
+								</div>
+								<div class="form_cols">
+									<div class="form_viewer_table_wrap">
+										<table class="form_viewer_table">
+											<tbody>
+												<tr>
+													<th><span class="form_label">UID</span></th>
+													<td><input type="text" class="form_input" placeholder="받는사람 UID"></td>
+												</tr>
+												<tr>
+													<th><span class="form_label">휴대폰</span></th>
+													<td><input type="text" class="form_input" placeholder="받는사람 휴대폰 마지막 4자리"></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="mt10 flex_right">
+										<p class="important_para"><span class="important_text">받는 사람 UID와 휴대폰 번호를 꼼꼼히 확인해 주세요</span></p>
+									</div>
+								</div>
+							</div>
+							<div class="vertical_item keyform_item">
+								<div class="key_cols">
+									<div class="form_category_group">
+										<p class="form_category">내정보</p>
+										<div class="ico_category ico_type2"></div>
+									</div>
+								</div>
+								<div class="form_cols">
+									<div class="form_viewer_table_wrap">
+										<table class="form_viewer_table">
+											<tbody>
+												<tr>
+													<th><span class="form_label emp_green">UID</span></th>
+													<td>
+														<div class="inline_form_group">
+															<div class="inline_form_long"><input type="text" class="form_input" placeholder="보낼 EGG"></div>
+															<div class="inline_form_short">
+																<div class="inline_keydata">
+																	<span class="inline_key">잔액</span>
+																	<span class="inline_data">
+																		<span class="inline_data_num">11,000</span>
+																		<span class="inline_data_unit">ⓒ</span>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th><span class="form_label emp_green">DONY</span></th>
+													<td>
+														<div class="inline_form_group">
+															<div class="inline_form_long"><input type="text" class="form_input" placeholder="보낼 DONY"></div>
+															<div class="inline_form_short">
+																<div class="inline_keydata">
+																	<span class="inline_key">잔액</span>
+																	<span class="inline_data">
+																		<span class="inline_data_num">-943,468</span>
+																		<span class="inline_data_unit">ⓒ</span>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th><span class="form_label emp_green">POINT</span></th>
+													<td>
+														<div class="inline_form_group">
+															<div class="inline_form_long"><input type="text" class="form_input" placeholder="보낼 POINT"></div>
+															<div class="inline_form_short">
+																<div class="inline_keydata">
+																	<span class="inline_key">잔액</span>
+																	<span class="inline_data">
+																		<span class="inline_data_num">226,004</span>
+																		<span class="inline_data_unit">ⓒ</span>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th><span class="form_label">메모</span></th>
+													<td><input type="text" class="form_input" placeholder="전달할 메모를 입력하세요."></td>
+												</tr>
+												<tr>
+													<th><span class="form_label">결제<br class="mb_br">비밀번호</span></th>
+													<td><input type="password" class="form_input" placeholder="결제 비밀번호를 입력하세요."></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="btn_submit_group">
+							<a href="#" class="btn_box big min_big green">선물하기</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+		<script>
+			window.addEventListener("load", function() {
+				// respon action
+				maxWid("pc", ".form_label");
+				maxWid("pc", ".inline_keydata");
+			}, false);
+		</script>
 		<footer class="footer_wrap">
 			<div class="pix_container">
 				<span class="bottomlogo"><span class="hdtext">ORYORY</span></span>
