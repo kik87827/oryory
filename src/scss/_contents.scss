@@ -379,7 +379,7 @@ input.form_input{border:1px solid #cccccc;border-radius:rem(4);line-height:1;hei
 .inline_form_long{flex:1;}
 .inline_form_long input.form_input{}
 .inline_form_short{flex:0;display:flex;justify-content: flex-end;margin-left:rem(10)}
-.inline_keydata{display:flex;white-space: nowrap;}
+.inline_keydata{display:flex;white-space: nowrap;align-items: center;}
 .inline_key{font-size:rem(16);color:#4e4e4e;margin-right:rem(7);line-height:1;vertical-align: middle;}
 .inline_data{display:flex;align-items: center;line-height:1;vertical-align: middle;}
 .inline_data_num{font-size:rem(16);color:#1b1b1b;font-weight:700;}

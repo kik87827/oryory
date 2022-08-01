@@ -4502,6 +4502,7 @@ input.form_input {
 .inline_keydata {
   display: flex;
   white-space: nowrap;
+  align-items: center;
 }
 
 .inline_key {
