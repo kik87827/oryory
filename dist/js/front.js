@@ -134,8 +134,31 @@ function commonLayout() {
       // },510);
     }, false);
   }
+  // gotop
+  function goTop() {
+    var btn_topgo = document.querySelector(".btn_topgo");
+    var domHtml = document.querySelector("html");
+    btn_topgo.addEventListener("click", function(e) {
+      e.preventDefault();
+      domHtml.classList.add("smooth");
+      setTimeout(function() {
+        window.scrollTo(0, 0);
+        // domHtml.addEventListener("transitionend",function(){
+        //     console.log(1);
+        // },false);
+      }, 30);
+    }, false);
+    window.addEventListener("scroll", function() {
+      var scroll = window.pageYOffset;
+      if (scroll == 0) {
+        domHtml.classList.remove("smooth");
+      }
+      console.log(scroll);
+    });
+  }
   mbTotal();
   mapMenu();
+  goTop();
 }
 
 function siblings(t) {
