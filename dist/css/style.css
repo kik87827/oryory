@@ -4569,6 +4569,7 @@ html.smooth {
 
 .form_cols {
   flex: 1;
+  padding-right: 5.625rem;
 }
 
 .form_category_group {
@@ -4597,6 +4598,18 @@ html.smooth {
   background-color: #f9feff;
   border-color: #c2f2f5;
   background-image: url("../images/ico_single_men.png");
+}
+
+.ico_category.ico_type3 {
+  background-color: #f9feff;
+  border-color: #c2f2f5;
+  background-image: url("../images/ico_return_point.png");
+}
+
+.ico_category.ico_type4 {
+  background-color: #f9feff;
+  border-color: #c2f2f5;
+  background-image: url("../images/ico_return_egg.png");
 }
 
 .form_viewer_table_wrap {
@@ -4634,6 +4647,14 @@ input.form_input {
   box-sizing: border-box;
   width: 100%;
   font-size: 0.9375rem;
+}
+
+.respon_placeholder_parag {
+  display: none;
+  font-size: 0.875rem;
+  color: #bebebe;
+  line-height: 1.3;
+  margin-top: 0.3125rem;
 }
 
 .important_para {
@@ -4707,6 +4728,16 @@ input.form_input {
   margin-left: 0.3125rem;
 }
 
+.vertical_formitem {
+  margin-bottom: 3.75rem;
+}
+.vertical_formitem .btn_submit_group {
+  margin-top: 1.875rem;
+}
+.vertical_formitem:last-of-type {
+  margin-bottom: 0;
+}
+
 @media (max-width: 1023px) {
   /* 컴포넌트 */
   .btn_submit_group {
@@ -4734,6 +4765,7 @@ input.form_input {
   }
   .form_cols {
     flex: 1;
+    padding-right: 0;
   }
   .form_category_group {
     text-align: center;
@@ -4780,6 +4812,29 @@ input.form_input {
   }
   .inline_data_num {
     font-size: 0.875rem;
+  }
+  .vertical_formitem .btn_submit_group {
+    margin-top: 1.25rem;
+  }
+}
+@media (max-width: 359px) {
+  .respon_placeholder_parag {
+    display: block;
+  }
+  input.form_input.respon_placeholder::-webkit-input-placeholder {
+    color: transparent;
+  }
+  input.form_input.respon_placeholder::-moz-input-placeholder {
+    color: transparent;
+  }
+  input.form_input.respon_placeholder:-ms-input-placeholder {
+    color: transparent;
+  }
+  input.form_input.respon_placeholder::-ms-input-placeholder {
+    color: transparent;
+  }
+  input.form_input.respon_placeholder::input-placeholder {
+    color: transparent;
   }
 }
 /*# sourceMappingURL=style.css.map */
