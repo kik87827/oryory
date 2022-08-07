@@ -31,7 +31,71 @@
 						</div>
 					</div>
 					<div class="subcontent">
-						내용이 들어갑니다.
+						<div class="form_viewer_table_wrap">
+							<table class="form_viewer_table">
+								<tbody>
+									<tr>
+										<th><span class="form_label">신청자 UID<br class="mb_br">(필수)</span></th>
+										<td><input type="text" class="form_input max_wid60" placeholder="신청자 UID" value="10027287"></td>
+									</tr>
+									<tr>
+										<th><span class="form_label">신청자 이름<br class="mb_br">(필수)</span></th>
+										<td><input type="text" class="form_input max_wid60" placeholder="신청자 이름" value="허훈.M1"></td>
+									</tr>
+									<tr>
+										<th><span class="form_label">보험 가입자명<br class="mb_br">(차주명)(필수)</span></th>
+										<td><input type="text" class="form_input max_wid60" placeholder="보험 가입자명"></td>
+									</tr>
+									<tr>
+										<th><span class="form_label">보험 가입자 <br class="mb_br">연락처(필수)</span></th>
+										<td>
+											<!-- placeholder가 길경우 모바일 처리(뷰포트 767이하) -->
+											<input type="password" class="form_input respon_placeholder max_wid60" placeholder="보험 가입자 연락처,  - 없이 숫자만 입력">
+											<p class="respon_placeholder_parag">보험 가입자 연락처,  - 없이 숫자만 입력</p>
+											<!-- // placeholder가 길경우 모바일 처리(뷰포트 767이하) -->
+										</td>
+									</tr>
+									<tr>
+										<th><span class="form_label">차량번호<br class="mb_br">(필수)</span></th>
+										<td><input type="text" class="form_input max_wid60" placeholder="차량번호"></td>
+									</tr>
+									<tr>
+										<th><span class="form_label">작년가입 <br class="mb_br">보험사명(필수)</span></th>
+										<td><input type="text" class="form_input max_wid60" placeholder="작년가입 보험사명"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<div class="form_vertical_item_wrap respon_mt60">
+							<div class="form_vertical_item multi_layout">
+								<div class="form_multi_short">
+									<div class="chkrd_item">
+										<input type="checkbox" class="chkrd" id="guide_check">
+										<label for="guide_check" class="chkrd_label">이용약관 동의(필수)</label>
+									</div>
+								</div>
+								<div class="form_multi_long">
+									<textarea rows="10" cols="10" class="form_textarea"></textarea>
+								</div>
+							</div>
+							<div class="form_vertical_item">
+								<ul class="indent_list">
+									<li>
+										<span class="indent_bullet">1.</span>
+										<div class="indent_item">작년가입보험사와 다른보험사로 자동차보험을 가입하셔야 DONY등 지급혜택자격이 부여됩니다.</div>
+									</li>
+									<li>
+										<span class="indent_bullet">2.</span>
+										<div class="indent_item">본인 또는 추천인의 계약으로 산정되기 위해서는 계약 완료 후 "계약사실통지"에 들어가 가입정보를 입력하여야 행정처리가 됩니다.</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="btn_submit_group">
+							<a href="#" class="btn_box big min_bigx2 green">자동차보험 가입하기</a>
+						</div>
 					</div>
 				</div>
 			</div>

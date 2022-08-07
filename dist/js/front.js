@@ -89,7 +89,9 @@ function commonLayout() {
     var submenu_two_list_wrap = document.querySelectorAll(".submenu_two_list_wrap");
     var currentItem = null;
     if (submenu_item.length < 2) {
-      submenu_item_list.classList.add("type2");
+      if (submenu_item_list !== null) {
+        submenu_item_list.classList.add("type2");
+      }
     }
 
     submenu_one.forEach(function(elem, index) {
@@ -196,7 +198,7 @@ function commonLayout() {
     var subcontent = document.querySelector(".subcontent");
     var subcontent_box_wrap = document.querySelector(".subcontent_box_wrap");
     var subcontent_box = document.querySelector(".subcontent_box");
-    var subcontent_box_next = subcontent_box.nextElementSibling;
+    var subcontent_box_next = null;
     var subcontent_box_next_style = null;
     var subcontent_box_next_margin_top = 0;
     var subcontent_box_next_height = 0;
@@ -207,6 +209,7 @@ function commonLayout() {
     if (subcontent_box_wrap == null || subcontent_box_wrap == null) {
       return;
     }
+    subcontent_box_next = subcontent_box.nextElementSibling;
     action();
     window.addEventListener("resize", function() {
       action();
