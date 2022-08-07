@@ -226,7 +226,6 @@ function commonLayout() {
 
 
       
-      console.dir(subcontent_box_next_margin_top);
 
       subcontent_box.style.minHeight = documentHeight - subcontent_box.offsetTop - (subcontent_box_wrap_get_bottom + subcontent_box_get_top + subcontent_box_get_bottom + footer_wrap_height + subcontent_box_next_margin_top + subcontent_box_next_height) + "px";
       // subcontent.style.minHeight = documentHeight - subcontent.offsetTop - (subcontent_box_wrap_get_bottom+subcontent_box_get_bottom+footer_wrap_height)  + "px";
