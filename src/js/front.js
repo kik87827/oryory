@@ -375,6 +375,7 @@ function DesignPopup(option) {
 
 DesignPopup.prototype.popupShow = function(target) {
   var objThis = this;
+  var touchstart = "ontouchstart" in window;
   this.selector = document.querySelector(target);
   if (this.selector == null) {
     return;
@@ -382,7 +383,9 @@ DesignPopup.prototype.popupShow = function(target) {
   this.domBody.setAttribute("data-scr", window.pageYOffset);
   this.domBody.style.marginTop = -window.pageYOffset + "px";
   this.scrollValue = window.pageYOffset;
-  this.domHtml.classList.add("touchDis");
+  if(touchstart){
+    this.domHtml.classList.add("touchDis");
+  }
   this.selector.classList.add("active");
   setTimeout(function() {
     objThis.selector.classList.add("motion");
