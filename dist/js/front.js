@@ -179,6 +179,9 @@ function commonLayout() {
   function goTop() {
     var btn_topgo = document.querySelector(".btn_topgo");
     var domHtml = document.querySelector("html");
+    if (btn_topgo == null) {
+      return;
+    }
     btn_topgo.addEventListener("click", function(e) {
       e.preventDefault();
       domHtml.classList.add("smooth");

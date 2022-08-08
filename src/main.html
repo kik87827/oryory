@@ -226,6 +226,60 @@
 				</div>
 			</div>
 		</section>
+		<!-- popup -->
+		<div class="popup_wrap" id="mainNotice">
+			<div class="bg_dim"></div>
+			<div class="popup_item">
+				<div class="popup_titlelow">
+					<h3 class="popup_title">오리아울렛 열림 공지</h3>
+				</div>
+				<div class="popup_contentlow">
+					<div class="pcont_inwrap">
+						<h4 class="pcont_subtitle">오리아울렛 오픈 알림</h4>
+						<ul class="indent_list respon_mt10 fontsize_15">
+							<li>
+								<span class="indent_bullet">1.</span>
+								<div class="indent_item">상품 : 오리오리 주식회사에서 판매하는 제품</div>
+							</li>
+							<li>
+								<span class="indent_bullet">2.</span>
+								<div class="indent_item">구매방법 : DONY, POINT 사용</div>
+							</li>
+							<li>
+								<span class="indent_bullet">3.</span>
+								<div class="indent_item">POINT 적용률 : 0~50%</div>
+							</li>
+							<li>
+								<span class="indent_bullet">4.</span>
+								<div class="indent_item">택배비 포함 가격</div>
+							</li>
+							<li>
+								<span class="indent_bullet">5.</span>
+								<div class="indent_item">택배 또는 센터 구매 가능</div>
+							</li>
+							<li>
+								<span class="indent_bullet">6.</span>
+								<div class="indent_item">아울렛 잭팟 참여 : 상품별 횟수 차등 (1~10회) 충족시 주화 1개 당첨</div>
+							</li>
+							<li>
+								<span class="indent_bullet">7.</span>
+								<div class="indent_item">아울렛에 상품 추가를 원하시는 분은 아래 파일 작성후 카카오 채널 "오리오리 패밀리"로 문의 주세요.</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="popup_btnlow">
+					<div class="padding_box_20 flex_grid align_right">
+						<div class="chkrd_item">
+							<input type="checkbox" class="chkrd" id="today_check">
+							<label for="today_check" class="chkrd_label">오늘 하루 열지 않음</label>
+						</div>
+					</div>
+				</div>
+				<a href="javascript:;" class="btn_popup_close"><span class="hdtext">닫기</span></a>
+			</div>
+		</div>
+		<!-- // popup -->
 		<script>
 			window.addEventListener("load",function(){
 				// length action
@@ -235,6 +289,11 @@
 				maxWid("mobile",".mc_current_label_text");
 				maxWid("pc",".mc_quick_text");
 				maxWid("pc",".mc_user_label");
+
+				// popup
+				var mainNotice = new DesignPopup({
+					selector: "#mainNotice"
+				});
 			},false);
 		</script>
 		@@include('./include/footer.html')
