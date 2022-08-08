@@ -1,7 +1,9 @@
 
 /* 공통 요소 */
+.color_emp{color:#e62453 !important;}
 .mb_br{display:none !important;}
 .font_bold{font-weight:500 !important;}
+.font_boldx2{font-weight:700 !important;}
 html.smooth{scroll-behavior: smooth;}
 .mt10{margin-top:rem(10) !important;}
 .mt20{margin-top:rem(20) !important;}
@@ -354,7 +356,7 @@ html.smooth{scroll-behavior: smooth;}
     .mc_linkage_wrap{padding:rem(20) 0;}
     .mc_linkage_wrap .pixed_container{padding:0 rem(20)}
     .mc_linkage_title_row{margin-bottom:rem(10)}
-    .mc_linkage_title:before{width:rem(30);height:(30);flex-basis:rem(30);}
+    .mc_linkage_title:before{width:rem(30);height:rem(30);flex-basis:rem(30);}
     .mc_linkage_title_text{font-size:rem(18);margin-left:rem(5)}
     .mc_linkage_data_row{}
     .mc_linkage_data_list{display:block;margin:0;}
@@ -456,7 +458,7 @@ html.smooth{scroll-behavior: smooth;}
 .form_viewer_table tr:last-of-type{}
 .form_viewer_table tr:last-of-type th{}
 .form_viewer_table tr:last-of-type td{}
-.form_label{display:inline-block;color:#4e4e4e;font-size:rem(17);white-space: nowrap;}
+.form_label{display:inline-block;color:#4e4e4e;font-size:rem(17);white-space: nowrap;font-weight:500;}
 input.form_input{border:1px solid #cccccc;border-radius:rem(4);line-height:1;height:rem(50);padding:0 rem(15);box-sizing: border-box;width:100%;font-size:rem(15);}
 input.form_input.small{height:rem(46);}
 textarea.form_textarea{border:1px solid #cccccc;border-radius:rem(4);line-height:1;height:rem(180);resize: none;}
@@ -744,7 +746,7 @@ select.select_obj{color:#323232;font-size:rem(15);border:1px solid #cccccc;heigh
         padding-top:rem(8);
         .form_label{display:flex;align-items: center;height:rem(40);}
     }
-    .form_label{font-size:rem(14);}
+    .form_label{font-size:rem(14);line-height:1.3;}
     input.form_input{height:rem(40) !important;padding:0 rem(10);font-size:rem(14);}
 
     .important_para:before{width:rem(14);height:rem(14);flex:0 0 rem(14);}
@@ -878,7 +880,7 @@ select.select_obj{color:#323232;font-size:rem(15);border:1px solid #cccccc;heigh
     }
     .form_multi_long{margin-top:rem(10)}
 
-    .chkrd_label{font-size:rem(14)}
+    .chkrd_label{font-size:rem(14);padding-top:rem(3)}
     .indent_list{font-size:rem(14)}
 }
 @media (max-width:767px){

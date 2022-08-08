@@ -26,8 +26,8 @@
 					<h3 class="subcontent_title">다이렉트 자동차 보험</h3>
 					<div class="tabmenu_list_wrap">
 						<div class="tabmenu_list type2">
-							<a href="#" class="tabmenu active"><span class="tabmenu_text">다이렉트보험 <br class="mb_br">가입신청</span></a>
-							<a href="#" class="tabmenu"><span class="tabmenu_text">보험계약<br class="mb_br">사실통지</span></a>
+							<a href="#" class="tabmenu"><span class="tabmenu_text">다이렉트보험 <br class="mb_br">가입신청</span></a>
+							<a href="#" class="tabmenu active"><span class="tabmenu_text">보험계약<br class="mb_br">사실통지</span></a>
 						</div>
 					</div>
 					<div class="subcontent">
@@ -60,25 +60,32 @@
 										<td><input type="text" class="form_input max_wid60" placeholder="차량번호"></td>
 									</tr>
 									<tr>
-										<th><span class="form_label">작년가입 <br class="mb_br">보험사명(필수)</span></th>
-										<td><input type="text" class="form_input max_wid60" placeholder="작년가입 보험사명"></td>
+										<th><span class="form_label">신규가입 <br class="mb_br">보험사명(필수)</span></th>
+										<td><input type="text" class="form_input max_wid60" placeholder="신규가입 보험사명"></td>
+									</tr>
+									<tr>
+										<th><span class="form_label">납입보험료 <br class="mb_br">(필수)</span></th>
+										<td>
+											<!-- placeholder가 길경우 모바일 처리(뷰포트 767이하) -->
+											<input type="password" class="form_input respon_placeholder max_wid60" placeholder="납입보험료,  - 없이 숫자만 입력">
+											<p class="respon_placeholder_parag">납입보험료,  - 없이 숫자만 입력</p>
+											<!-- // placeholder가 길경우 모바일 처리(뷰포트 767이하) -->
+										</td>
+									</tr>
+									<tr>
+										<th><span class="form_label">보험가입일 <br class="mb_br">(필수)</span></th>
+										<td>
+											<!-- placeholder가 길경우 모바일 처리(뷰포트 767이하) -->
+											<input type="password" class="form_input respon_placeholder max_wid60" placeholder="예시)2022-01-25, 년-월-일 -포함 10자리 입력">
+											<p class="respon_placeholder_parag">예시)2022-01-25, 년-월-일 -포함 10자리 입력</p>
+											<!-- // placeholder가 길경우 모바일 처리(뷰포트 767이하) -->
+										</td>
 									</tr>
 								</tbody>
 							</table>
 						</div>
 
 						<div class="form_vertical_item_wrap respon_mt60">
-							<div class="form_vertical_item multi_layout">
-								<div class="form_multi_short">
-									<div class="chkrd_item">
-										<input type="checkbox" class="chkrd" id="guide_check">
-										<label for="guide_check" class="chkrd_label">이용약관 동의(필수)</label>
-									</div>
-								</div>
-								<div class="form_multi_long">
-									<textarea rows="10" cols="10" class="form_textarea"></textarea>
-								</div>
-							</div>
 							<div class="form_vertical_item">
 								<ul class="indent_list">
 									<li>
@@ -94,7 +101,7 @@
 						</div>
 
 						<div class="btn_submit_group">
-							<a href="#" class="btn_box big min_bigx2 green">자동차보험 가입하기</a>
+							<a href="#" class="btn_box big min_bigx2 green">계약사실 통지하기</a>
 						</div>
 					</div>
 				</div>
