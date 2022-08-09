@@ -906,6 +906,11 @@ body ::-webkit-scrollbar-track {
   text-align: center;
 }
 
+.gnb_list > li {
+  display: flex;
+  height: 100%;
+}
+
 .gnb_menu {
   display: flex;
   height: 100%;

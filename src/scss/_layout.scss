@@ -14,6 +14,7 @@ body ::-webkit-scrollbar-track {background-color: #fff;border-radius: rem(10);bo
 
 .gnb_list_wrap{height:100%;}
 .gnb_list{display:flex;height:100%;align-items: center;text-align: center;}
+.gnb_list > li{display:flex;height:100%;}
 .gnb_menu{display:flex;height: 100%;align-items: center;padding:0 2.344vw;position:relative;}
 .gnb_menu:after{display:block;content:'';width:100%;height:0;position:absolute;bottom:rem(-1);left:0;background:#000;}
 .gnb_menu_text{display:inline-block;font-size:rem(18);font-weight:500;letter-spacing: -.5px;color:#000000;line-height:1;}
