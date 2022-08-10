@@ -219,7 +219,7 @@ function commonLayout() {
       var subcontent_box_cssobj = window.getComputedStyle(subcontent_box, null);
       var subcontent_box_get_bottom = parseInt(subcontent_box_cssobj.getPropertyValue("padding-bottom"));
       var subcontent_box_get_top = parseInt(subcontent_box_cssobj.getPropertyValue("padding-top"));
-      var footer_wrap_height = footer_wrap !== undefined ? footer_wrap.offsetHeight : 0;
+      var footer_wrap_height = footer_wrap !== null ? footer_wrap.offsetHeight : 0;
       var documentHeight = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
 
       if(subcontent_box_next !== null){

@@ -60,6 +60,11 @@ body ::-webkit-scrollbar-track {background-color: #fff;border-radius: rem(10);bo
     &.bgtype2{
         background:#f8f8f8;
     }
+    &.guide{
+        background:#f8f8f8;padding:0;
+        .subcontent_box_wrap{padding-top:rem(20);}
+        min-height:100vh;
+    }
 }
 
 

@@ -1048,6 +1048,14 @@ body ::-webkit-scrollbar-track {
 .middle_wrap.bgtype2 {
   background: #f8f8f8;
 }
+.middle_wrap.guide {
+  background: #f8f8f8;
+  padding: 0;
+  min-height: 100vh;
+}
+.middle_wrap.guide .subcontent_box_wrap {
+  padding-top: 1.25rem;
+}
 
 .btn_mobile_menu {
   display: none;
@@ -5119,9 +5127,10 @@ html.smooth {
   display: inline-block;
   color: #fff;
   line-height: 1;
-  background: #ddd;
+  background: #000;
   border-radius: 6.25rem;
   border: 1px solid #ddd;
+  padding: 0.625rem;
 }
 .btn_box.green {
   background: #00c599;
@@ -5199,6 +5208,10 @@ html.smooth {
   margin: 0 auto;
   background: #f9fffe url("../images/ico_multi_men.png") no-repeat 50% 50%/100% auto;
   border: 1px solid #c2f2f5;
+}
+.ico_category.only_ico {
+  display: inline-block;
+  margin: 0;
 }
 
 .ico_category.widtype2 {
@@ -5505,6 +5518,9 @@ select.select_obj {
   flex: 0 0 1.75rem;
   border-radius: 100%;
   background: #3e99ff url("../images/ico_data.png") no-repeat 0 0/100% auto;
+}
+.data_ico.only_ico {
+  display: inline-block;
 }
 
 .data_ico.bg_type2 {
@@ -7077,6 +7093,16 @@ input.sform_input {
   margin: 0 auto 1.25rem;
 }
 
+.ico_copy_obj.only_ico {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+.ico_copy_obj.only_ico::before {
+  margin: 0;
+}
+
 @media (max-width: 767px) {
   .pagination {
     margin: 1.875rem 0 0.625rem;
@@ -7193,6 +7219,54 @@ input.sform_input {
     flex: 0;
     box-sizing: border-box;
     min-width: 0;
+  }
+}
+.source_his_item {
+  margin-bottom: 6.25rem;
+}
+
+.source_his_item:last-of-type {
+  margin-bottom: 0;
+}
+
+.component_title {
+  font-size: 24px;
+  color: #000;
+  font-weight: 700;
+  border-bottom: 2px solid #000;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.component_title_sub {
+  font-size: 20px;
+  color: #000;
+}
+
+.textarea_size {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  margin-top: 2.5rem;
+  overflow: hidden;
+  resize: none;
+}
+
+.render_wrap {
+  margin: 0.625rem 0 0 0;
+}
+
+.component_dep {
+  margin-bottom: 2.5rem;
+}
+
+.component_dep:last-of-type {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1023px) {
+  .component_title {
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */
