@@ -275,7 +275,7 @@ html.smooth{scroll-behavior: smooth;}
 .mc_current_label.ico_egg:before{background-image:url("../images/ico_mc01_02.png");}
 .mc_current_label.ico_dony:before{background-image:url("../images/ico_mc01_03.png");}
 .mc_current_label.ico_point:before{background-image:url("../images/ico_mc01_04.png");}
-.mc_current_data{margin-left:0.7vw;background:rgba(0,0,0,.16);border-radius:rem(100);padding:0.521vw 0.885vw}
+.mc_current_data{margin-left:0.7vw;background:rgba(0,0,0,.16);border-radius:rem(100);padding:0.521vw 0.885vw;line-height:0;font-size:0;}
 .mc_current_data_text{font-size:1.042vw;color:#fffc00;font-weight:700;line-height:1;}
 .mc_current_item:hover .mc_current_label_text{color:#fffc00;}
 .mc_current_item:hover .mc_current_label:before{background-position:0 100%;}

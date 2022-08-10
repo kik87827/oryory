@@ -4304,6 +4304,8 @@ html.smooth {
   background: rgba(0, 0, 0, 0.16);
   border-radius: 6.25rem;
   padding: 0.521vw 0.885vw;
+  line-height: 0;
+  font-size: 0;
 }
 
 .mc_current_data_text {
