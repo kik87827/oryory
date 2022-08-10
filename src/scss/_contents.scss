@@ -1151,6 +1151,14 @@ input.sform_input{border:1px solid #cccccc;padding:0 rem(20);border-radius:rem(5
 	-webkit-transform:rotate(45deg);transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);top:1px;
 }
 .pnt_ellipsis{display:inline-block; box-sizing:border-box; position:relative;height:19px; font-size:14px;line-height:1.2; white-space: nowrap; text-overflow: ellipsis;overflow:hidden;position:relative; max-width:100%;}
+
+
+.ico_copy_obj_w{}
+.ico_copy_obj{border-bottom:1px solid #e7e7e7;padding-bottom:rem(40);margin-bottom:rem(40);text-align: center;}
+.ico_copy_obj_low:last-of-type{border-bottom:0}
+.ico_copy_obj::before{display:block;content:'';width:rem(98);height:rem(98);background:url("../images/obj_memberimg.png") no-repeat 0 0/100% auto;margin:0 auto rem(20);}
+
+
 @media (max-width: 1023px) {
     .paging_layer_right{top:-1px;}
 }
