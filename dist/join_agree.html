@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="./css/style.css" />
+	<script src="./js/jquery-3.4.1.min.js"></script>
+	<script src="./js/swiper.min.js"></script>
+	<script src="./js/front.js"></script>
+	<title></title>
+</head>
+
+<body class="front_body">
+	<div class="page_wrap">
+		<section class="middle_wrap bgtype2 layout_type3">
+			<div class="subcontent_box_wrap">
+				<div class="subcontent_box">
+					<div class="subcontent_title_wrap">
+						<a href="#" class="btn_history_back"><span class="hdtext">뒤로가기</span></a>
+						<h3 class="subcontent_title">신규 회원 가입<br class="mb_br">(이용약관동의)</h3>
+					</div>
+					<div class="subcontent">
+						<div class="flex_grid align_right respon_mb20 respon_mboth100">
+							<div class="chkrd_item">
+								<input type="checkbox" class="chkrd" id="all_ok">
+								<label for="all_ok" class="chkrd_label">이용약관에 모두 동의합니다.</label>
+							</div>
+						</div>
+						<div class="form_vertical_item_wrap respon_mboth100" id="agree_content">
+							<div class="form_vertical_item">
+								<p class="font_bold respon_mb10 fontsize_18 color_emp_black">사이트이용약관</p>
+								<textarea rows="10" cols="10" class="form_textarea height_small" readonly>내용이 들어갑니다.</textarea>
+								<div class="flex_grid respon_mt10">
+									<div class="chkrd_item">
+										<input type="checkbox" class="chkrd" id="agree01">
+										<label for="agree01" class="chkrd_label">이용약관 동의(필수)</label>
+									</div>
+								</div>
+							</div>
+							<div class="form_vertical_item">
+								<p class="font_bold respon_mb10 fontsize_18 color_emp_black">개인정보이용약관</p>
+								<textarea rows="10" cols="10" class="form_textarea height_small" readonly>내용이 들어갑니다.</textarea>
+								<div class="flex_grid respon_mt10">
+									<div class="chkrd_item">
+										<input type="checkbox" class="chkrd" id="agree02">
+										<label for="agree02" class="chkrd_label">이용약관 동의(필수)</label>
+									</div>
+								</div>
+							</div>
+							<div class="form_vertical_item">
+								<p class="font_bold respon_mb10 fontsize_18 color_emp_black">위치정보이용약관</p>
+								<textarea rows="10" cols="10" class="form_textarea height_small" readonly>내용이 들어갑니다.</textarea>
+								<div class="flex_grid respon_mt10">
+									<div class="chkrd_item">
+										<input type="checkbox" class="chkrd" id="agree03">
+										<label for="agree03" class="chkrd_label">이용약관 동의(선택)</label>
+									</div>
+								</div>
+							</div>
+							<div class="form_vertical_item">
+								<p class="font_bold respon_mb10 fontsize_18 color_emp_black">이벤트 등 프로모션 알림 메일 수신</p>
+								<div class="flex_grid respon_mt10">
+									<div class="chkrd_item">
+										<input type="checkbox" class="chkrd" id="agree04">
+										<label for="agree04" class="chkrd_label">수신 동의(선택)</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="btn_submit_group">
+							<a href="#" class="btn_box big min_big green">다음단계</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script>
+			var checkelement = document.querySelectorAll("#agree_content .chkrd");
+			document.querySelector("#all_ok").addEventListener("click", function(e) {
+				checkelement.forEach(function(elem) {
+					elem.checked = e.currentTarget.checked;
+				});
+			}, false);
+		</script>
+		<footer class="footer_wrap">
+			<div class="pix_container">
+				<span class="bottomlogo"><span class="hdtext">ORYORY</span></span>
+				<p class="footer_copy">Copyright (c) ORYORY. All rights reserved</p>
+				<a href="#" class="btn_topgo"><span class="hdtext">페이지상단으로 이동</span></a>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+@@include('./include/head.html')
+<body class="front_body">
+	<div class="page_wrap">
+		<section class="middle_wrap bgtype2 layout_type3">
+			<div class="subcontent_box_wrap">
+				<div class="subcontent_box">
+					<div class="subcontent_title_wrap">
+						<a href="#" class="btn_history_back"><span class="hdtext">뒤로가기</span></a>
+						<h3 class="subcontent_title">신규 회원 가입<br class="mb_br">(휴대폰 인증)</h3>
+					</div>
+					<div class="subcontent">
+						<div class="respon_mboth100">
+							<div class="form_viewer_table_wrap">
+								<table class="form_viewer_table">
+									<tbody>
+										<tr>
+											<th class="vertical_type2"><span class="form_label">휴대폰<br class="mb_br">번호</span></th>
+											<td>
+												<div class="inline_form_group">
+													<div class="inline_form_long">
+														<input type="text" class="form_input respon_placeholder" placeholder="예)01012345678 - 없이 숫자만 기재">
+														<!-- placeholder가 길경우 모바일 처리(뷰포트 767이하) -->
+														<p class="respon_placeholder_parag">예) 01012345678 - 없이 숫자만 기재</p>
+														<!-- // placeholder가 길경우 모바일 처리(뷰포트 767이하) -->
+													</div>
+													<div class="inline_form_short">
+														<a href="#" class="btn_inline_form">인증번호발송</a>
+													</div>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<th class="vertical_type2"><span class="form_label">인증번호<br class="mb_br">입력</span></th>
+											<td>
+												<div class="inline_form_group">
+													<div class="inline_form_long"><input type="text" class="form_input respon_placeholder" placeholder="인증번호 입력"></div>
+												</div>
+												<p class="inline_form_copy">* 휴대폰 문자로 발송 된 인증번호를 입력해 주세요.</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="btn_submit_group">
+								<a href="#" class="btn_box big min_big green">다음단계</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		@@include('./include/footer.html')
+	</div>
+</body>
+</html>
