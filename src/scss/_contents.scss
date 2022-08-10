@@ -67,7 +67,10 @@ html.smooth{scroll-behavior: smooth;}
 
 .flex_grid{display:flex;align-items: center;
     &.align_right{justify-content: flex-end;}
+    &.align_both{justify-content: space-between;}
 }
+.padding_box_10_15{padding:rem(10) rem(15) !important;}
+.padding_box_10{padding:rem(10) !important;}
 .padding_box_20{padding:rem(20) !important;}
 .padding_box_30{padding:rem(30) !important;}
 .padding_box_40{padding:rem(40) !important;}
@@ -191,12 +194,18 @@ html.smooth{scroll-behavior: smooth;}
 
 
 /* 공통 popup */
-.popup_wrap{position:fixed;top:0;left:0;width:100%;height:100%;z-index:100000;display:none;align-items: center;justify-content: center;min-width:rem(280);overflow:hidden;}
+.popup_wrap{position:fixed;top:0;left:0;width:100%;height:100%;z-index:100000;display:none;align-items: center;justify-content: center;min-width:rem(280);overflow:hidden;flex-wrap:wrap;}
 .popup_item{
     box-sizing: border-box;z-index:20; max-width:rem(600);margin:rem(30) auto; max-height:calc(100% - rem(60)); background:#fff; position:relative; display:flex; flex-direction: column;
     -webkit-box-shadow: 2px 2px 14px 2px rgba(64,64,64,0.3); box-shadow: 2px 2px 14px 2px rgba(64,64,64,0.3); border-radius:1.1875rem; width:100%;opacity:0;transition:.4s; transform: translateY(-20%);
+    &.no_transition{transition:0s;opacity:1;transform:none;}
+    &.notice_type{margin:0;display:block;max-height:100%;max-width:100%;
+        // .popup_contentlow{overflow:visible;}
+    }
 }
-.bg_dim{display:block;width:100%;height:100%;position:fixed;top:0;left:0;z-index:0;background:#000;opacity:0;transition:.5s;}
+.bg_dim{display:block;width:100%;height:100%;position:fixed;top:0;left:0;z-index:0;background:#000;opacity:0;transition:.5s;
+    &.no_transition{transition:0s;opacity:.6;transform:none;}
+}
 .popup_titlelow{text-align:center;border-bottom: 1px solid #e7e7e7;flex:0;padding:0 rem(40)}
 .popup_title{font-size:rem(25);color:#2b2b2b;padding:rem(25) rem(15) rem(15);font-weight:500;}
 .popup_contentlow{position:relative;overflow:hidden;overflow-y:auto;flex:1;font-size:rem(12);color:#333333;}
@@ -208,8 +217,11 @@ html.smooth{scroll-behavior: smooth;}
 .popup_wrap.active.motion .bg_dim{opacity:.6;}
 .popup_wrap.active{display:flex}
 .btn_submitbox_w{display:flex;margin:0;padding:rem(30) rem(23);}
-.btn_submitbox{display:inline-block;font-size:rem(16);text-align:center;color:#4e4e4e;font-weight:500;flex:1;margin:0 rem(2.5);background:#e7e7e7;border-radius:rem(5);padding:rem(12);}
+.btn_submitbox_w .btn_submitbox{margin:0 rem(2.5);}
+.btn_submitbox{display:inline-block;font-size:rem(16);text-align:center;color:#4e4e4e;font-weight:500;flex:1;background:#e7e7e7;border-radius:rem(5);padding:rem(12) rem(20);}
 .btn_submitbox.dtype2{background:#00c599;color:#fff;}
+.btn_submitbox.inline_type{flex:0;white-space: nowrap;}
+.btn_submitbox.small{padding:rem(8) rem(12)}
 .btn_submitbox_w.dtype2{
     display:block;text-align:center;padding:rem(15); 
     .btn_submitbox{padding:rem(12) rem(20);}
@@ -1159,4 +1171,29 @@ input.sform_input{border:1px solid #cccccc;padding:0 rem(20);border-radius:rem(5
 	// .paginate_button a {width: 18px;height: 18px;font-size:11px;line-height: 18px;}
 	// .paginate_button.previous a:after, 
     // .paginate_button.next a:after{margin-top: 6px;width:4px;height:4px;}
+}
+
+
+// notice popup
+.notice_popup_wrap{position:absolute;top:0;left:0;z-index:50;padding:0 rem(10);flex-wrap:wrap;box-sizing: border-box;overflow:hidden;overflow-y:auto;display:none;
+    &.only_one{align-items: center;justify-content: center;width:100%;height:100%;position:fixed;padding:rem(20);
+        .notice_popup_cols{padding:0;}
+    }
+    &.active{display:flex;}
+}
+.notice_popup_cols{padding:rem(20) rem(10) 0;flex:0;box-sizing:border-box; min-width:500px;
+    .popup_item.notice_type{}
+}
+
+@media (max-width: 1023px) {
+    .notice_popup_wrap{padding:rem(15) 0;width:100%;
+        &.only_one{
+            padding:rem(15);
+            .notice_popup_cols{width:100%;min-width:100%;}
+        }
+        &.active{display:block;}
+    }
+    .notice_popup_cols{padding:rem(10) rem(20) 0;flex:0;box-sizing:border-box; min-width:0;
+        .popup_item.notice_type{}
+    }
 }
