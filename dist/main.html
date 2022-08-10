@@ -164,7 +164,7 @@
 													<p class="mc_chart_number">30,870</p>
 												</div>
 											</div>
-											<div class="mc_chart_btn_group"><a href="#" class="btn_mcbox">참여자 보기</a></div>
+											<div class="mc_chart_btn_group"><a href="#" id="btn_view_gift" class="btn_mcbox">참여자 보기</a></div>
 										</li>
 										<li>
 											<p class="mc_chart_title">OFFLINE</p>
@@ -173,7 +173,7 @@
 													<p class="mc_chart_number">25,870</p>
 												</div>
 											</div>
-											<div class="mc_chart_btn_group"><a href="#" class="btn_mcbox">참여자 보기</a></div>
+											<div class="mc_chart_btn_group"><a href="#" id="btn_view_offline" class="btn_mcbox">참여자 보기</a></div>
 										</li>
 										<li>
 											<p class="mc_chart_title">OUTLET</p>
@@ -182,7 +182,7 @@
 													<p class="mc_chart_number">12,870</p>
 												</div>
 											</div>
-											<div class="mc_chart_btn_group"><a href="#" class="btn_mcbox">참여자 보기</a></div>
+											<div class="mc_chart_btn_group"><a href="#" id="btn_view_outlet" class="btn_mcbox">참여자 보기</a></div>
 										</li>
 									</ul>
 								</div>
@@ -350,6 +350,65 @@
 				<a href="javascript:;" class="btn_popup_close"><span class="hdtext">닫기</span></a>
 			</div>
 		</div>
+		<div class="popup_wrap" id="giftPopup">
+			<div class="bg_dim"></div>
+			<div class="popup_item">
+				<div class="popup_titlelow">
+					<h3 class="popup_title">GIFT JACKPOT 참여회원</h3>
+				</div>
+				<div class="popup_contentlow">
+					<div class="pcont_inwrap">
+						<p class="fontsize_18">
+							10041566, 2045417216, 2045417216, 10197432, 2034133374, 10718321, 10718321, 10718321, 10718321, 10718321, 10718321, 10718321, 10718321, 10718321, 10718321, 10393226, 10748919, 2011808436, 2058996172, 2011936454, 2011983151, 2011983151, 2066023422, 2066023422, 2066023422, 2066023422, 2066023422, 2087909625, 2088105122, 10293152, 10293152, 2019630828, 10495660, 10234544, 2027330072, 2088030961, 2023327578, 2027330072, 2066023422, 2066023422, 2066023422, 2066023422, 2066023422, 2087909625, 2087909625, 10794495, 10794495, 2074204567, 10393226, 2011276489, 2011276489, 2011276489, 2011276489, 2011276489, 2011276489, 2011808436, 2087909625, 2087909625, 10794495, 10000000, 10553394, 2058996172, 10908731, 10553394, 10553394, 10553394, 10553394, 2087909625, 2087909625, 2087909625, 2087909625, 10696534, 10345259, 2019630828, 10963532, 10963532, 2011933906, 10963532, 10393226, 10197432, 10748919, 2011808436, 10795541, 10795541, 10795541, 10795541, 10795541, 2019630828, 2023327578, 10646448, 10735803, 10748919, 2011808436, 2077073358, 10735803, 2077073358, 10795541, 10795541, 10795541, 10795541, 10795541, 10795541, 10795541, 10795541, 2023327578, 10393226, 2019630828, 2077073358, 10041566, 10041566, 10041566, 2023327578, 2066023422, 2066023422, 10197432, 10735803, 10393226, 2077073358, 10748919, 10345259, 10345259, 10174595, 10607984, 10160813, 10969490, 10345259, 10735803, 10735803, 10516805, 10000000, 10597449, 10000000, 10981873, 10000000, 10000000, 10000000, 10000000, 2088030961, 10000000, 10000000, 10000000, 10000000, 10000000, 10000000, 10345259, 10345259, 10996625, 10996625, 10996625, 10996625, 10996625, 10246995, 10246995, 10246995, 10246995, 10246995, 10843668, 10843668, 10996625, 10843668, 10246995, 10246995, 10246995, 10246995, 10246995, 10246995, 10246995, 10246995, 10406291, 10000000, 10000000, 10345259, 10000000, 10000000, 2019630828, 2019630828, 2019630828, 10000000, 10000000, 10000000, 10000000, 10843668, 10843668, 10843668, 10843668, 10843668, 10843668, 10843668, 10843668, 10843668, 10000000, 10000000, 10000000, 10000000, 10000000, 10000000, 10000000, 10345259, 10345259, 10197432, 10197432, 10000000, 10000000, 10000000, 10000000, 10000000, 10000000, 10000000, 10000000, 10000000, 10598225, 10000000, 10438526, 10438526, 10438526, 10000000, 10000000, 10000000, 10000000, 10000000, 10000000, 10000000, 10044760, 10000000, 10000000, 10000000, 10044760
+						</p>
+					</div>
+				</div>
+				<div class="popup_btnlow">
+					<div class="btn_submitbox_w dtype2">
+						<a href="javascript:;" class="btn_submitbox dtype2 close_trigger">닫기</a> <!-- close_trigger 있으면 닫기 -->
+					</div>
+				</div>
+				<a href="javascript:;" class="btn_popup_close"><span class="hdtext">닫기</span></a>
+			</div>
+		</div>
+		<div class="popup_wrap" id="offlinePopup">
+			<div class="bg_dim"></div>
+			<div class="popup_item">
+				<div class="popup_titlelow">
+					<h3 class="popup_title">OFFLINE JACKPOT 참여회원</h3>
+				</div>
+				<div class="popup_contentlow">
+					<div class="pcont_inwrap">
+						<p class="fontsize_18">2011983151, 2019731222, 2019731222, 2019731222, 2055481760, 2055481760, 2035853131, 2096250243, 2011604259, 10213622, 10546822, 2055229763, 2055229763, 2019561119, 2019561119, 2019561119, 10345259, 10417871, 2015901590, 2011604259, 2001282006, 10027287, 2073778880, 10015649, 10015649, 10027287, 2011936454, 10578622, 2011276489, 2073778880, 2073778880, 2073778880, 2073778880, 2073778880, 2073778880, 2073778880, 2073778880, 2073778880, 2073778880, 2073778880, 2073778880, 2073778880, 2073778880, 2073778880, 2073778880</p>
+					</div>
+				</div>
+				<div class="popup_btnlow">
+					<div class="btn_submitbox_w dtype2">
+						<a href="javascript:;" class="btn_submitbox dtype2 close_trigger">닫기</a> <!-- close_trigger 있으면 닫기 -->
+					</div>
+				</div>
+				<a href="javascript:;" class="btn_popup_close"><span class="hdtext">닫기</span></a>
+			</div>
+		</div>
+		<div class="popup_wrap" id="outletPopup">
+			<div class="bg_dim"></div>
+			<div class="popup_item">
+				<div class="popup_titlelow">
+					<h3 class="popup_title">OUTLET JACKPOT 참여회원</h3>
+				</div>
+				<div class="popup_contentlow">
+					<div class="pcont_inwrap">
+						<p class="fontsize_18">2019731222, 2019731222, 2019731222, 2019731222, 2019731222, 2045417216, 2045417216, 2045417216, 2045417216, 2045417216, 2025492679, 2025492679, 2025492679, 2025492679, 2025492679, 10345259, 10345259, 10345259, 10345259, 10345259, 2087909625, 2087909625, 2087909625, 2087909625, 2087909625, 2063202094, 2063202094</p>
+					</div>
+				</div>
+				<div class="popup_btnlow">
+					<div class="btn_submitbox_w dtype2">
+						<a href="javascript:;" class="btn_submitbox dtype2 close_trigger">닫기</a> <!-- close_trigger 있으면 닫기 -->
+					</div>
+				</div>
+				<a href="javascript:;" class="btn_popup_close"><span class="hdtext">닫기</span></a>
+			</div>
+		</div>
 		<!-- // popup -->
 		<script>
 			window.addEventListener("load", function() {
@@ -362,9 +421,29 @@
 				maxWid("pc", ".mc_user_label");
 
 				// popup
-				var mainNotice = new DesignPopup({
-					selector: "#mainNotice"
-				});
+				// var mainNotice = new DesignPopup({
+				// 	selector: "#mainNotice"
+				// });
+
+				document.querySelectorAll(".mc_chart_btn_group .btn_mcbox").forEach((element) => {
+					element.addEventListener("click", function(e) {
+						e.preventDefault();
+						const e_data_id = e.currentTarget.getAttribute("id");
+						if (e_data_id === "btn_view_gift") {
+							var giftObj = new DesignPopup({
+								selector: "#giftPopup"
+							});
+						} else if (e_data_id === "btn_view_offline") {
+							var offlineObj = new DesignPopup({
+								selector: "#offlinePopup"
+							});
+						} else if (e_data_id === "btn_view_outlet") {
+							var outletObj = new DesignPopup({
+								selector: "#outletPopup"
+							});
+						}
+					}, false);
+				}, false)
 			}, false);
 		</script>
 		<footer class="footer_wrap">

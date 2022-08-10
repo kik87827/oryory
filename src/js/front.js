@@ -380,10 +380,10 @@ DesignPopup.prototype.popupShow = function(target) {
   if (this.selector == null) {
     return;
   }
-  this.domBody.setAttribute("data-scr", window.pageYOffset);
-  this.domBody.style.marginTop = -window.pageYOffset + "px";
   this.scrollValue = window.pageYOffset;
   if(touchstart){
+    this.domBody.setAttribute("data-scr", window.pageYOffset);
+    this.domBody.style.marginTop = -window.pageYOffset + "px";
     this.domHtml.classList.add("touchDis");
   }
   this.selector.classList.add("active");
@@ -402,6 +402,7 @@ DesignPopup.prototype.popupShow = function(target) {
 }
 DesignPopup.prototype.popupHide = function(target) {
   var objThis = this;
+  var touchstart = "ontouchstart" in window;
   if (target !== undefined) {
     if (typeof target == "object") {
       this.selector = target;
@@ -414,9 +415,11 @@ DesignPopup.prototype.popupHide = function(target) {
       objThis.selector.classList.remove("active");
       objThis.design_popup_wrap_active = document.querySelectorAll(".popup_wrap.active");
       if (objThis.design_popup_wrap_active.length == 0) {
-        objThis.domHtml.classList.remove("touchDis");
-        objThis.domBody.style.marginTop = 0;
-        window.scrollTo(0, parseInt(objThis.domBody.getAttribute("data-scr")));
+        if(touchstart){
+          objThis.domHtml.classList.remove("touchDis");
+          objThis.domBody.style.marginTop = 0;
+          window.scrollTo(0, parseInt(objThis.domBody.getAttribute("data-scr")));
+        }
       }
     }, 420);
   }
