@@ -6197,6 +6197,40 @@ select.select_obj {
   justify-content: center;
   align-items: center;
   background: #eef0f3;
+  flex-direction: column;
+}
+
+.front_body.full_screen .footer_wrap {
+  flex: 0 0 4.5rem;
+  width: 100%;
+  height: 4.5rem;
+}
+
+.full_header_wrap {
+  background: #fff;
+  border-bottom: 1px solid #e1e1e1;
+  flex: 0;
+  width: 100%;
+}
+
+.full_mid_wrap {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../images/bg_login.jpg") no-repeat 50% 50%/cover;
+}
+
+.full_header_pixin {
+  height: 3.6875rem;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .footer_text,
@@ -6233,7 +6267,8 @@ select.select_obj {
 }
 
 .screen_form_tit > img {
-  height: 2rem;
+  height: 1.75rem;
+  vertical-align: top;
 }
 
 .screen_form_tb {
@@ -6835,7 +6870,7 @@ input.sform_input {
     height: 1.5625rem;
   }
   .elseform_fxwrap .chkrd_item {
-    margin: 0 0.9375rem 0 0;
+    margin: 0.3125rem 0.9375rem 0 0;
   }
   .sform_inwrap.has_ico:after {
     width: 2.8125rem;
@@ -6843,6 +6878,25 @@ input.sform_input {
   }
   input.sform_input {
     height: 2.8125rem;
+  }
+  .full_head_copy {
+    font-size: 0.8125rem;
+  }
+  .full_header_pixin {
+    padding: 0 1.25rem;
+    height: 2.5rem;
+    flex-basis: 2.5rem;
+  }
+  .front_body.full_screen .footer_wrap {
+    background: #282828;
+    flex-basis: 0 !important;
+    height: auto;
+    font-size: 0;
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.625rem;
   }
   .text_grid_list > li {
     padding: 0 1.25rem;

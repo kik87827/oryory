@@ -793,7 +793,11 @@ select.select_obj{color:#323232;font-size:rem(15);border:1px solid #cccccc;heigh
 
 
 
-.front_body.full_screen .page_wrap{min-height:100vh;display:flex;justify-content:center;align-items: center;background:#eef0f3;}
+.front_body.full_screen .page_wrap{min-height:100vh;display:flex;justify-content:center;align-items: center;background:#eef0f3;flex-direction: column;}
+.front_body.full_screen .footer_wrap{flex:0 0 rem(72);width:100%;height:rem(72)}
+.full_header_wrap{background:#fff;border-bottom:1px solid #e1e1e1;flex:0;width:100%;}
+.full_mid_wrap{flex:1;width:100%;height:100%;display:flex;align-items: center;justify-content: center;background:url("../images/bg_login.jpg") no-repeat 50% 50%/cover;}
+.full_header_pixin{height:rem(59);max-width:rem(1280);margin:0 auto;padding:0 rem(30);display:flex;align-items: center;justify-content: space-between;}
 .footer_text,
 .footer_copy{font-size:rem(13);color:#8c8c8c;}
 .footer_text{margin-right:rem(8);}
@@ -802,7 +806,7 @@ select.select_obj{color:#323232;font-size:rem(15);border:1px solid #cccccc;heigh
 .form_screen_field{background:#fff;border-radius:rem(20);padding:rem(50) rem(55) rem(40);box-shadow: 2px 2px 15px 0px rgb(0 0 0 / 0.05);border:1px solid #e8e8e8;min-width:rem(400);}
 .screen_form_titlow{margin-bottom:rem(30);}
 .screen_form_tit{display:block;line-height:1;text-align: center;}
-.screen_form_tit > img{height:rem(32);}
+.screen_form_tit > img{height:rem(28);vertical-align: top;}
 .screen_form_tb{display:table;width:100%;text-align: left;}
 .screen_form_tr{display:table-row;}
 .screen_form_cell{display:table-cell;vertical-align: middle;padding-bottom:rem(7);}
@@ -1039,10 +1043,12 @@ input.sform_input{border:1px solid #cccccc;padding:0 rem(20);border-radius:rem(5
     .btn_textlink{font-size:rem(14);}
     .btn_formsubmit{font-size:rem(16);padding:rem(15);}
     .screen_form_tit > img{height:rem(25)}
-    .elseform_fxwrap .chkrd_item{margin:0 rem(15) 0 0;}
+    .elseform_fxwrap .chkrd_item{margin:rem(5) rem(15) 0 0;}
     .sform_inwrap.has_ico:after{width:rem(45);height:rem(45)}
     input.sform_input{height:rem(45);}
-
+    .full_head_copy{font-size:rem(13)}
+    .full_header_pixin{padding:0 rem(20);height:rem(40);flex-basis: rem(40);}
+    .front_body.full_screen .footer_wrap{background:#282828;flex-basis:0 !important;height:auto;font-size:0;line-height:0;display:flex;align-items: center;justify-content: center;padding:rem(10)}
     .text_grid_list{
         > li{
             padding:0 rem(20);
