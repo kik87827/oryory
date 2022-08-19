@@ -43,6 +43,7 @@ input[type="date"]{font-family: 'Noto Sans KR';}
 input[type=text]::-ms-clear {
   display:none;
 }
+input[type="submit"]{font-family:'Noto Sans KR';cursor:pointer;}
 .skip_menu , .hide{display:none;}
 .clear{clear:both;}
 .hide{display:none;}

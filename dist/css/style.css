@@ -185,6 +185,11 @@ input[type=text]::-ms-clear {
   display: none;
 }
 
+input[type=submit] {
+  font-family: "Noto Sans KR";
+  cursor: pointer;
+}
+
 .skip_menu, .hide {
   display: none;
 }
@@ -4078,6 +4083,8 @@ html.smooth {
 
 .btn_submitbox {
   display: inline-block;
+  vertical-align: middle;
+  border: 0;
   font-size: 1rem;
   text-align: center;
   color: #4e4e4e;
@@ -5131,6 +5138,7 @@ html.smooth {
   border-radius: 6.25rem;
   border: 1px solid #ddd;
   padding: 0.625rem;
+  vertical-align: middle;
 }
 .btn_box.green {
   background: #00c599;
@@ -5157,6 +5165,10 @@ html.smooth {
 }
 .btn_box.min_bigx2 {
   min-width: 16.25rem;
+}
+
+input[type=submit].btn_box {
+  letter-spacing: -1px;
 }
 
 .vertical_item {
@@ -5388,7 +5400,10 @@ select.select_obj {
 
 .btn_inline_form {
   display: inline-block;
+  cursor: pointer;
+  vertical-align: middle;
   background: #455267;
+  border: 0;
   border-radius: 0.5rem;
   height: 2.875rem;
   white-space: nowrap;
@@ -6373,6 +6388,7 @@ input.sform_input {
   background: #00c599;
   border: 1px solid #00c599;
   font-size: 1.1875rem;
+  width: 100%;
   color: #fff;
   border-radius: 6.25rem;
   line-height: 1;
