@@ -185,9 +185,15 @@ input[type=text]::-ms-clear {
   display: none;
 }
 
+button[type=submit] {
+  box-sizing: content-box;
+  cursor: pointer;
+}
+
 input[type=submit] {
   font-family: "Noto Sans KR";
   cursor: pointer;
+  box-sizing: content-box;
 }
 
 .skip_menu, .hide {
@@ -5347,6 +5353,9 @@ select.select_obj {
   display: inline-block;
   width: 2.5rem;
   height: 2.5rem;
+  border: 0;
+  vertical-align: middle;
+  color: transparent;
   background: #455267 url("../images/ico_search.png") no-repeat 50% 50%/50% auto;
   border-radius: 100%;
 }
@@ -5408,7 +5417,7 @@ select.select_obj {
   height: 2.875rem;
   white-space: nowrap;
   padding: 0.875rem;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
   line-height: 1;
   color: #fff;
   font-size: 1rem;
@@ -6389,6 +6398,7 @@ input.sform_input {
   border: 1px solid #00c599;
   font-size: 1.1875rem;
   width: 100%;
+  box-sizing: border-box !important;
   color: #fff;
   border-radius: 6.25rem;
   line-height: 1;
